@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jaber Ahmed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: "Raleway", sans-serif
+            }
+
+            .w3-third img {
+                margin-bottom: -6px;
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+            .w3-third img:hover {
+                opacity: 1
+            }
+        </style>
+    </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>JABER<br>AHMED</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Jaber Ahmed</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/99123266_893183591199017_2179320926305255424_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeHXywPqc3HXwS1WRhEg9NL2xCKifmZIzOzEIqJ-ZkjM7PXG6WdZhVfG4MPj3Qztzi7Dk5rvGP4RaGknGOzTo1IU&_nc_ohc=6zbkF-Q3_PwAX_FKz2m&_nc_ht=scontent-otp1-1.xx&oh=00_AfDSa6l7P3hAV9DvMEJahG311c_mAD3MpGttrgVBcdv_HA&oe=65BB9561" style="width:100%" onclick="onClick(this)"
+                    alt="A boy surrounded by beautiful nature">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/65098046_862484207418385_2427640838549929984_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeG4777q2RZWtkfNLYpY_MT0gefB9gr85qmB58H2CvzmqUUwq1ObMKc71Hb0_WJ0mUCPTmTeLGARjLWe_Q_Olgy1&_nc_ohc=jDe5DBGy3tkAX_G470b&_nc_ht=scontent-otp1-1.xx&oh=00_AfBQT8eMZv7cLVpcbmhfyHnNUDypEwE6v-rJGBgOvh7Ceg&oe=65BB94C6" style="width:100%" onclick="onClick(this)"
+                    alt="What a beautiful scenery this sunset">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/52855226_790077097992430_458850219728044032_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeGVQjnn11W08CZBDIADtmdm5lWbPhCNpN_mVZs-EI2k31kuazjWnmdjmbIPsAsVVIddjOxg_oVsGQVclaBU9deK&_nc_ohc=eTydyCHjoVUAX9pPGRo&_nc_oc=AQl5iYqldqzCgktf5SVRTfkBV3aGNS-p9P1v7TwAWlVoD8c9ixrC20C-TG-KA7Uvxag&_nc_ht=scontent-otp1-1.xx&oh=00_AfDtZy5tGajdj8abQ9Awpsrr_p2NQglNvF2hB4sTomxUag&oe=65BBB52E" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+            </div>
+
+            <div class="w3-third">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/52482058_252331815685514_3271245606022021120_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2be8e3&_nc_eui2=AeEAkY7uBgHZwUHNkeeClnXgPcX2ceYo1809xfZx5ijXzbvqhn2Ii4xrpqvKdgXQOIW4JDovQl8ZgU31q-cN1kCG&_nc_ohc=vPY_pJm4W0EAX_l8kz4&_nc_ht=scontent-otp1-1.xx&oh=00_AfAqqZGepaoFCkrFAzb-OmHcem2KUlS1-sr0FeCQJ2ZQCw&oe=65BB969B" style="width:100%" onclick="onClick(this)"
+                    alt="Quiet day at the beach. Cold, but beautiful">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/37856394_656551034678371_3133498634675421184_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFQU_9pVN9o4ObhrHwbI08K7vhp8vw8EsXu-Gny_DwSxfxEgx8_MVbK27_3Q3t8am7yPYcfgyPRj_h9lokWAMOS&_nc_ohc=b_b5Yxj3uhIAX-jr3c6&_nc_ht=scontent-otp1-1.xx&oh=00_AfCQ6kUnJ5W8NrOSQLB6VLJ8IndBENEmo4TNencZOkZXWQ&oe=65BBA788" style="width:100%" onclick="onClick(this)"
+                    alt="Waiting for the bus in the desert">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/47275560_737965163203624_5262598413899268096_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeHqjAC1QTYJnS8XNWkG85spITmptNJHWvohOam00kda-pracmmWI_YTtLoDeS09tbu5nZa6vlj3sZEstK0jOAOG&_nc_ohc=LAYtzJKEzVoAX-et9qz&_nc_ht=scontent-otp1-1.xx&oh=00_AfBER_jQmYu6C2aQlVAmqTtehXpMBokz8vs2EAk5jQAO3Q&oe=65BBB3EA" style="width:100%" onclick="onClick(this)"
+                    alt="Nature again.. At its finest!">
+            </div>
+
+            <div class="w3-third">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/27503660_328601167649961_8434381107225161441_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeEgqjuu55eD78TsFsijJBS70_w4xfCLxD3T_DjF8IvEPWXuVjH77798G1YSx8RuAk0XoWxYEZtHa8i7errMPHX9&_nc_ohc=nmGtwSJTgRIAX8DKKpE&_nc_ht=scontent-otp1-1.xx&oh=00_AfBdnge-UEcwYQOIzNcUj0u47TNkU75QDG8KkRJ6ASK6NA&oe=65BBA1C3" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/26063644_541283266205149_2104050989427788671_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeG8zAB4UmfbN-TUZRR_akU8QxIc7105TbRDEhzvXTlNtPl_QV8tqnM1ycnzEssrlQLatYatWOyDxojjfrlqU_25&_nc_ohc=y9sH6g3C9w0AX_iTJrq&_nc_oc=AQmAx3G29uJBFFFLuu3bmaLyCGkut8nvv2_JFPC9BdVi8JruS7wLDmKrqKfRUU_X-1c&_nc_ht=scontent-otp1-1.xx&oh=00_AfDhFrasVnvuVm2pdrjUcksSgbKGX2QVS11KDNxoX3s9AA&oe=65BBB2A6" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/23826293_525708654429277_6545071949098953581_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFfbIc0QD5xEcpD_oj9moruZTLy1nqGurtlMvLWeoa6u1I9NFoVe27pp6NplYP4m3UtmoxuZP70fO-ULE1mzjjo&_nc_ohc=VD_bMgG0JoEAX-Is-_g&_nc_ht=scontent-otp1-1.xx&oh=00_AfBJbYcJ_f4mxLUJYtl5qVEIaoU5WZyv7zWeB2NnrW6OQQ&oe=65BB9424" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="./index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="./photoGrid.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/404318319_2047865252213602_8056785179654194250_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeH4WqlmN4FdwxFqClZaqUsKECnVuuN7c9oQKdW643tz2lpl3W1Mr9Zi-gsRufqgNfnDFMXvjLmfKysTlynnpFLN&_nc_ohc=oNATF5dv6mUAX-Hm1Hy&_nc_ht=scontent-otp1-1.xx&oh=00_AfCO5zX75tbENsW91KTFNJQ35vSKqsastLJMJCzvIST6Rg&oe=6598C0A2" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>My Name</h4>
+                <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>mail: example@example.com</p>
+                <p>tel: 5353 35531</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">Technical Skills</h4>
+                <p class="w3-wide">Photography</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+                </div>
+                <p class="w3-wide">Web Design</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide">Photoshop</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
+                        Resume</button></p>
+                <hr class="w3-opacity">
+
+                <h4 class="w3-padding-16">How much I charge</h4>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">Photography</li>
+                            <li class="w3-padding-16">5GB Storage</li>
+                            <li class="w3-padding-16">Mail Support</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 10</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">Photography</li>
+                            <li class="w3-padding-16">50GB Storage</li>
+                            <li class="w3-padding-16">Endless Support</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 25</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Me</b></h4>
+                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting
+                    new people!</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                        ultricies congue gravida diam non fringilla.</p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>BLOG POSTS</h3>
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Lorem</span><br>
+                            <span>Sed mattis nunc</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Ipsum</span><br>
+                            <span>Praes tinci sed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">W3Schools Spaces</a></div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
