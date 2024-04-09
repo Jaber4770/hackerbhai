@@ -1,274 +1,770 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jaber Ahmed</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <style>
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
-                font-family: "Raleway", sans-serif
-            }
 
-            .w3-third img {
-                margin-bottom: -6px;
-                opacity: 0.8;
-                cursor: pointer
-            }
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-            .w3-third img:hover {
-                opacity: 1
-            }
-        </style>
-    </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>JABER<br>AHMED</b></h3>
-        <a href="javascript:void(0)" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">Jaber Ahmed</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-    </header>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+<body>
 
-        <!-- Photo grid -->
-        <div class="w3-row">
-            <div class="w3-third">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/99123266_893183591199017_2179320926305255424_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeHXywPqc3HXwS1WRhEg9NL2xCKifmZIzOzEIqJ-ZkjM7PXG6WdZhVfG4MPj3Qztzi7Dk5rvGP4RaGknGOzTo1IU&_nc_ohc=6zbkF-Q3_PwAX_FKz2m&_nc_ht=scontent-otp1-1.xx&oh=00_AfDSa6l7P3hAV9DvMEJahG311c_mAD3MpGttrgVBcdv_HA&oe=65BB9561" style="width:100%" onclick="onClick(this)"
-                    alt="A boy surrounded by beautiful nature">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/65098046_862484207418385_2427640838549929984_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeG4777q2RZWtkfNLYpY_MT0gefB9gr85qmB58H2CvzmqUUwq1ObMKc71Hb0_WJ0mUCPTmTeLGARjLWe_Q_Olgy1&_nc_ohc=jDe5DBGy3tkAX_G470b&_nc_ht=scontent-otp1-1.xx&oh=00_AfBQT8eMZv7cLVpcbmhfyHnNUDypEwE6v-rJGBgOvh7Ceg&oe=65BB94C6" style="width:100%" onclick="onClick(this)"
-                    alt="What a beautiful scenery this sunset">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/52855226_790077097992430_458850219728044032_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeGVQjnn11W08CZBDIADtmdm5lWbPhCNpN_mVZs-EI2k31kuazjWnmdjmbIPsAsVVIddjOxg_oVsGQVclaBU9deK&_nc_ohc=eTydyCHjoVUAX9pPGRo&_nc_oc=AQl5iYqldqzCgktf5SVRTfkBV3aGNS-p9P1v7TwAWlVoD8c9ixrC20C-TG-KA7Uvxag&_nc_ht=scontent-otp1-1.xx&oh=00_AfDtZy5tGajdj8abQ9Awpsrr_p2NQglNvF2hB4sTomxUag&oe=65BBB52E" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
-            </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-            <div class="w3-third">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/52482058_252331815685514_3271245606022021120_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2be8e3&_nc_eui2=AeEAkY7uBgHZwUHNkeeClnXgPcX2ceYo1809xfZx5ijXzbvqhn2Ii4xrpqvKdgXQOIW4JDovQl8ZgU31q-cN1kCG&_nc_ohc=vPY_pJm4W0EAX_l8kz4&_nc_ht=scontent-otp1-1.xx&oh=00_AfAqqZGepaoFCkrFAzb-OmHcem2KUlS1-sr0FeCQJ2ZQCw&oe=65BB969B" style="width:100%" onclick="onClick(this)"
-                    alt="Quiet day at the beach. Cold, but beautiful">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/37856394_656551034678371_3133498634675421184_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFQU_9pVN9o4ObhrHwbI08K7vhp8vw8EsXu-Gny_DwSxfxEgx8_MVbK27_3Q3t8am7yPYcfgyPRj_h9lokWAMOS&_nc_ohc=b_b5Yxj3uhIAX-jr3c6&_nc_ht=scontent-otp1-1.xx&oh=00_AfCQ6kUnJ5W8NrOSQLB6VLJ8IndBENEmo4TNencZOkZXWQ&oe=65BBA788" style="width:100%" onclick="onClick(this)"
-                    alt="Waiting for the bus in the desert">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/47275560_737965163203624_5262598413899268096_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeHqjAC1QTYJnS8XNWkG85spITmptNJHWvohOam00kda-pracmmWI_YTtLoDeS09tbu5nZa6vlj3sZEstK0jOAOG&_nc_ohc=LAYtzJKEzVoAX-et9qz&_nc_ht=scontent-otp1-1.xx&oh=00_AfBER_jQmYu6C2aQlVAmqTtehXpMBokz8vs2EAk5jQAO3Q&oe=65BBB3EA" style="width:100%" onclick="onClick(this)"
-                    alt="Nature again.. At its finest!">
-            </div>
+      <h1 class="logo"><a href="index.html">Jack Sargey</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-            <div class="w3-third">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/27503660_328601167649961_8434381107225161441_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeEgqjuu55eD78TsFsijJBS70_w4xfCLxD3T_DjF8IvEPWXuVjH77798G1YSx8RuAk0XoWxYEZtHa8i7errMPHX9&_nc_ohc=nmGtwSJTgRIAX8DKKpE&_nc_ht=scontent-otp1-1.xx&oh=00_AfBdnge-UEcwYQOIzNcUj0u47TNkU75QDG8KkRJ6ASK6NA&oe=65BBA1C3" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/26063644_541283266205149_2104050989427788671_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeG8zAB4UmfbN-TUZRR_akU8QxIc7105TbRDEhzvXTlNtPl_QV8tqnM1ycnzEssrlQLatYatWOyDxojjfrlqU_25&_nc_ohc=y9sH6g3C9w0AX_iTJrq&_nc_oc=AQmAx3G29uJBFFFLuu3bmaLyCGkut8nvv2_JFPC9BdVi8JruS7wLDmKrqKfRUU_X-1c&_nc_ht=scontent-otp1-1.xx&oh=00_AfDhFrasVnvuVm2pdrjUcksSgbKGX2QVS11KDNxoX3s9AA&oe=65BBB2A6" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-                <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t31.18172-8/23826293_525708654429277_6545071949098953581_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFfbIc0QD5xEcpD_oj9moruZTLy1nqGurtlMvLWeoa6u1I9NFoVe27pp6NplYP4m3UtmoxuZP70fO-ULE1mzjjo&_nc_ohc=VD_bMgG0JoEAX-Is-_g&_nc_ht=scontent-otp1-1.xx&oh=00_AfBJbYcJ_f4mxLUJYtl5qVEIaoU5WZyv7zWeB2NnrW6OQQ&oe=65BB9424" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
-            </div>
-        </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-        <!-- Pagination -->
-        <div class="w3-center w3-padding-32">
-            <div class="w3-bar">
-                <a href="./index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
-                <a href="./photoGrid.html" class="w3-bar-item w3-button w3-hover-black">»</a>
-            </div>
-        </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption"></p>
-            </div>
-        </div>
-
-        <!-- About section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-            <h4><b>About Me</b></h4>
-            <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/404318319_2047865252213602_8056785179654194250_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeH4WqlmN4FdwxFqClZaqUsKECnVuuN7c9oQKdW643tz2lpl3W1Mr9Zi-gsRufqgNfnDFMXvjLmfKysTlynnpFLN&_nc_ohc=ANvcJFUNJEYAX8OGgjn&_nc_ht=scontent-otp1-1.xx&oh=00_AfA8QrXIuIwPcU32bXrWBP1n2AgTzioCNNgmveVA7UPbcA&oe=65A892A2" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>My Name is Jaber Ahmed</h4>
-                <p>Cyber Security Researcher | OSINT Expert | CEH | MERN Stack Developer | Junior Web Developer | Penetration Tester | Ethical Hacker | BBaria Cyber Squad | Photographer | Blood Donner (O+) | Volunteer
-                </p>
-                <p>I introduced the computer when I was 13 years old, my cousin bought a computer and he taught me basic things about computers. Passing time I learn HTML5, CSS3, Bootstrap, Tailwind, JavaScript, ES6, React etc.
-                    I like to think and type that's why I chose to program and become e Web developer was my dream and Ethical Hacker. I full fill my dream by learning skills HTML5, CSS3, Bootstrap, Tailwind CSS, JavaScript, ES6, React Js, MongoDB, Node Js, Express Js, and Redux, in cyber security i learn about SQLI, XSS, CSRF, LFI, BurpSuite, Nessus, FFUF, Dirsearch, Nuclei, WpScan, Linux, Nmap, OSINT and many more. At the time of learning, I was facing a lot of problems and I solve many problems, to solve a few problems I took help from my instructor.
-                    Now I like to learn new things and I am learning daily.
-                    Thank you for reading about me!</p>
-                <p>Mail: jaber.ahmed4770@gmail.com</p>
-                <p>tel: 5353 35531</p>
-                <hr class="w3-opacity">
-                <h4 class="w3-padding-16">Technical Skills</h4>
-                <p class="w3-wide">Photography</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
-                </div>
-                <p class="w3-wide">Web Design</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
-                </div>
-                <p class="w3-wide">Photoshop</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
-                </div>
-                <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
-                        Resume</button></p>
-                <hr class="w3-opacity">
-
-                <h4 class="w3-padding-16">How much I charge</h4>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half w3-margin-bottom">
-                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">Photography</li>
-                            <li class="w3-padding-16">5GB Storage</li>
-                            <li class="w3-padding-16">Mail Support</li>
-                            <li class="w3-padding-16">
-                                <h2>$ 10</h2>
-                                <span class="w3-opacity">per month</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w3-half">
-                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">Photography</li>
-                            <li class="w3-padding-16">50GB Storage</li>
-                            <li class="w3-padding-16">Endless Support</li>
-                            <li class="w3-padding-16">
-                                <h2>$ 25</h2>
-                                <span class="w3-opacity">per month</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact section -->
-        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-            <div class="w3-content" style="max-width:600px">
-                <h4 class="w3-center"><b>Contact Me</b></h4>
-                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting
-                    new people!</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-section">
-                        <label>Name</label>
-                        <input class="w3-input w3-border" type="text" name="Name" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input w3-border" type="text" name="Email" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Message</label>
-                        <input class="w3-input w3-border" type="text" name="Message" required>
-                    </div>
-                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-32 w3-grey">
-            <div class="w3-row-padding">
-                <div class="w3-third">
-                    <h3>INFO</h3>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
-                </div>
-
-                <div class="w3-third">
-                    <h3>BLOG POSTS</h3>
-                    <ul class="w3-ul">
-                        <li class="w3-padding-16 w3-hover-black">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Lorem</span><br>
-                            <span>Sed mattis nunc</span>
-                        </li>
-                        <li class="w3-padding-16 w3-hover-black">
-                            <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Ipsum</span><br>
-                            <span>Praes tinci sed</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="w3-third">
-                    <h3>POPULAR TAGS</h3>
-                    <p>
-                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span
-                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">W3Schools Spaces</a></div>
-
-
-        <!-- End page content -->
     </div>
+  </header><!-- End Header -->
 
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/78894636_984344175232387_8185034276815765504_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFJUAo3Wr5JFci4fbdF-UtAGAl0YKGfhc4YCXRgoZ-FzlFH6TeDnQTbzwc4i7NlRWUGZ7Msn8AB2A7ZU74r7g-v&_nc_ohc=eaWpGJQzIS4Ab72t2eN&_nc_ht=scontent-otp1-1.xx&oh=00_AfC7ZOXCjJCCUlFy2rkHXrcmIMvG0WZJK6p9f6WE32XMsg&oe=663BFA4C)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Jack Sargey</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Ethical Hacker, Web Developer, Freelancer, Programmer, Photographer, OSINT Expert, Filmmaker"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
+  <main id="main">
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/305221128_1740823439584453_1602079729989716903_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGb7rVQI3nJnXvVmmjX3q04n3Mk3HOo5LyfcyTcc6jkvKWRFA8NemsoHwWzqlYVAkuJqTOKVslNM6_iQhj7t8QU&_nc_ohc=LRDSwZ5Ldu4Ab6Exqx5&_nc_oc=Adiq9FWkmKXpFYJLQmGbQeux0K3is0P4E0SNRnMCdpMrqXHbIBwOfjbQ00SxyWZzuTg&_nc_ht=scontent-otp1-1.xx&oh=00_AfAuU9ewR7YxUjt6qrXDuwjQ9OxzdS99jlPYRZDAP1R7vQ&oe=661A6B34" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Jack Sargey</span></p>
+                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                      imperdiet et, porttitor
+                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                      porttitor accumsan tincidunt.
+                    </p>
+                    <p class="lead">
+                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                      porttitor volutpat. Vestibulum
+                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                    </p>
+                    <p class="lead">
+                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                      Nulla porttitor accumsan
+                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
 
-    </script>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Ethical Hacking</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Photography</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Free Support</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Film Making</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">OSINT</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
 
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Xavi Alonso</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Marta Socrate</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at.
+                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                        mollitia inventore?
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
+                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Jack Sargey</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
